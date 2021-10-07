@@ -1,4 +1,4 @@
-# Apache-superset
+# Apache-superset container with remote MySQL and Redis
 Use superset in a docker with a remote MySQL Database (instead of postgres) and a remote redis URL.
 The reason is simple - 
 For production deployments, it may useful to setup a dedicated remote MySQL RDS, and a dedicated Redis cluster.
