@@ -98,4 +98,8 @@ Run the command to bring superset, it will initalise MySQL DB, Redis cache, load
 
 > sudo /usr/local/bin/docker-compose -f docker-compose-non-dev.yml up
 
+**Few Additional Notes**
+For actual prod, you may need to change the default values like the default admin password for superset, and create a non-admin user for Mysql. 
+If your remote DB and Redis are created in AWS, check your connectivity from the host machine. Use mysql cli and redis-cli for the verification.
+If you face connectivity problems, then make sure the security groups (aws) for mysql rds and redis cache allow traffic from your host ip. 
 
